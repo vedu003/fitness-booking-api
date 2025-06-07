@@ -15,11 +15,19 @@ A simple FastAPI backend for booking fitness classes like Yoga, Zumba, and HIIT.
 - Unit Testing
 - MySQL backend
 
+## Prerequisites
+
+- Python 3.10 (or compatible)
+
+This project has been tested with Python 3.10.18.
+
+Make sure to use the correct Python version to avoid compatibility issues.
+
 ## ⚙️ Setup Instructions
 
 1. **Clone the Repo**
 ```bash
-git clone https://github.com/your-username/fitness-booking-api.git
+git clone https://github.com/vedu003/fitness-booking-api.git
 cd fitness-booking-api
 ```
 
