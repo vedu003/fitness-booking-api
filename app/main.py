@@ -69,5 +69,8 @@ def get_bookings(client_email: str, db: Session = Depends(get_db)):
     Get all bookings made by a specific email address.
     """
     bookings = crud.get_bookings_by_email(db, client_email)
+    if not bookings:
+        raise HTTPException(status_code=404, detail="Email does not exist or no bookings found")
+    
     logger.info(f"{len(bookings)} bookings fetched for {client_email}")
     return crud.get_bookings_by_email(db, client_email)
