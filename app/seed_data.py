@@ -14,9 +14,9 @@ def seed():
 
     # Seed sample classes
     classes = [
-        models.FitnessClass(name="Yoga", datetime=datetime.now() + timedelta(days=1), instructor="Alice", available_slots=10),
-        models.FitnessClass(name="Zumba", datetime=datetime.now() + timedelta(days=2), instructor="Bob", available_slots=15),
-        models.FitnessClass(name="HIIT", datetime=datetime.now() + timedelta(days=3), instructor="Charlie", available_slots=8),
+        models.FitnessClass(name="Yoga", datetime=datetime.now() + timedelta(days=1), instructor="Alice", available_slots=4),
+        models.FitnessClass(name="Zumba", datetime=datetime.now() + timedelta(days=2), instructor="Bob", available_slots=10),
+        models.FitnessClass(name="HIIT", datetime=datetime.now() + timedelta(days=3), instructor="Charlie", available_slots=2),
     ]
     db.add_all(classes)
     db.commit()
